@@ -1,0 +1,15 @@
+.header-container {
+  background-color: var(--navBackgroundColor);
+  color: var(--navTextColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  font-size: 1.5rem;
+}
+
+.header-nav > a {
+  color: var(--navTextColor);
+  text-decoration: none;
+  margin: 5vw;
+}

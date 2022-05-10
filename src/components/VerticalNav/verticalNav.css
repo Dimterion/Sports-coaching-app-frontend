@@ -1,0 +1,27 @@
+.verticalNav-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--navBackgroundColor);
+  color: var(--navTextColor);
+  margin: 0;
+  height: 100vh;
+  width: 7vw;
+}
+
+.verticalNav-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.verticalNav-menu-container > a {
+  margin: 1vh;
+}
+
+.verticalNav-text-container {
+  font-size: 0.8rem;
+  transform: rotate(-90deg);
+  width: max-content;
+}

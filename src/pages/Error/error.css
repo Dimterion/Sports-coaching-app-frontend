@@ -1,0 +1,13 @@
+.error-container {
+  font-size: 2rem;
+  margin: 15vw;
+  text-align: center;
+}
+
+.error-title {
+  color: var(--primaryColor);
+}
+
+.error-return {
+  color: var(--primaryColor);
+}
