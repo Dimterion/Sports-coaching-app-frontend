@@ -4,9 +4,9 @@ import "./horizontalNav.css";
 
 function HorizontalNav() {
   return (
-    <nav className="header-container">
+    <nav className="horizontalNav-container">
       <img src={logo} alt="SportSee logo" />
-      <div className="header-nav">
+      <div className="horizontalNav-nav">
         <Link to="/">Home</Link>
         <Link to="/">Profile</Link>
         <Link to="/">Settings</Link>

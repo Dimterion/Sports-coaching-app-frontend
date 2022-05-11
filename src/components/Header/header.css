@@ -1,0 +1,22 @@
+.header-container {
+  margin: 0 15vw;
+}
+
+.header-title {
+  display: flex;
+  font-size: 2rem;
+}
+
+.header-title > h2 {
+  font-weight: 500;
+  margin: 5vh 0.5vw 1vh 0;
+}
+
+.header-title-name {
+  color: var(--primaryColor);
+}
+
+.header-text {
+  font-size: 1.25rem;
+  margin: 0;
+}

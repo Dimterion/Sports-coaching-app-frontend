@@ -1,4 +1,4 @@
-.header-container {
+.horizontalNav-container {
   background-color: var(--navBackgroundColor);
   color: var(--navTextColor);
   display: flex;
@@ -8,7 +8,7 @@
   font-size: 1.5rem;
 }
 
-.header-nav > a {
+.horizontalNav-nav > a {
   color: var(--navTextColor);
   text-decoration: none;
   margin: 5vw;
