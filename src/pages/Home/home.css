@@ -1,5 +1,15 @@
 .home-container {
   font-size: 1.5rem;
-  margin: 20vw;
+  margin: 20vh 20vw;
   text-align: center;
+}
+
+.home-container > a {
+  color: var(--primaryColor);
+  margin: 3vw;
+}
+
+.home-subtitle {
+  color: var(--primaryColor);
+  font-size: 4rem;
 }

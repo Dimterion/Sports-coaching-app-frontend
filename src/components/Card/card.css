@@ -1,0 +1,23 @@
+.card-container > div {
+  display: flex;
+  align-items: center;
+  background-color: var(--primaryBackgroundColor);
+  border-radius: 5px;
+  margin: 2vh 0;
+  padding: 2vh 2vw;
+}
+
+.card-container > div > img {
+  margin: 0 2vh 0 0;
+  width: 4rem;
+}
+
+.card-container > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container > div > div > span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}

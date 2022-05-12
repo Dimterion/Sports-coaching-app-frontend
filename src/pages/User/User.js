@@ -27,10 +27,20 @@ function User() {
   ) : (
     <div>
       <Header firstName={user.data.userInfos.firstName} />
-      <BarChart />
-      <AreaChart />
-      <RadarChart />
-      <PieChart />
+      <div className="statistics-container">
+        <div className="charts-container">
+          <BarChart />
+          <AreaChart />
+          <RadarChart />
+          <PieChart />
+        </div>
+        <Card
+          firstItemQuantity={user.data.keyData.calorieCount}
+          secondItemQuantity={user.data.keyData.proteinCount}
+          thirdItemQuantity={user.data.keyData.carbohydrateCount}
+          fourthItemQuantity={user.data.keyData.lipidCount}
+        />
+      </div>
     </div>
   );
 }
