@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useFetch } from "../../utils/fetch";
+import useFetch from "../../utils/fetch";
 import Header from "../../components/Header/Header";
 import BarChart from "../../components/BarChart/BarChar";
-import AreaChart from "../../components/AreaChart/AreaChart";
+import ChartArea from "../../components/ChartArea/ChartArea";
 import RadarChart from "../../components/RadarChart/RadarChart";
 import Card from "../../components/Card/Card";
 import PieChart from "../../components/PieChart/PieChart";
@@ -18,11 +18,17 @@ function User() {
     error,
   } = useFetch(`http://localhost:3000/user/${id}`);
 
-  if (error) {
+  const {
+    data: averageSessions,
+    loading: loadingSessions,
+    error: errorSessions,
+  } = useFetch(`http://localhost:3000/user/${id}/average-sessions`);
+
+  if (error || errorSessions) {
     return <Error />;
   }
 
-  return loading ? (
+  return loading || loadingSessions ? (
     <Loader />
   ) : (
     <div>
@@ -30,7 +36,7 @@ function User() {
       <div className="statistics-container">
         <div className="charts-container">
           <BarChart />
-          <AreaChart />
+          <ChartArea sessions={averageSessions.data.sessions} />
           <RadarChart />
           <PieChart />
         </div>
