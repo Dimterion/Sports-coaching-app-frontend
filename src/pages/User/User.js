@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../../utils/fetch";
 import Header from "../../components/Header/Header";
-import BarChart from "../../components/BarChart/BarChar";
+import ChartBar from "../../components/ChartBar/ChartBar";
 import ChartArea from "../../components/ChartArea/ChartArea";
-import RadarChart from "../../components/RadarChart/RadarChart";
+import ChartRadar from "../../components/ChartRadar/ChartRadar";
 import Card from "../../components/Card/Card";
 import PieChart from "../../components/PieChart/PieChart";
 import Loader from "../../components/Loader/Loader";
@@ -24,20 +24,38 @@ function User() {
     error: errorSessions,
   } = useFetch(`http://localhost:3000/user/${id}/average-sessions`);
 
-  if (error || errorSessions) {
+  const {
+    data: activities,
+    loading: loadingActivities,
+    error: errorActivities,
+  } = useFetch(`http://localhost:3000/user/${id}/activity`);
+
+  const {
+    data: performance,
+    loading: loadingPerformance,
+    error: errorPerformance,
+  } = useFetch(`http://localhost:3000/user/${id}/performance`);
+
+  if (error || errorSessions || errorActivities || errorPerformance) {
     return <Error />;
   }
 
-  return loading || loadingSessions ? (
+  return loading ||
+    loadingSessions ||
+    loadingActivities ||
+    loadingPerformance ? (
     <Loader />
   ) : (
     <div>
       <Header firstName={user.data.userInfos.firstName} />
       <div className="statistics-container">
         <div className="charts-container">
-          <BarChart />
+          <ChartBar activities={activities.data.sessions} />
           <ChartArea sessions={averageSessions.data.sessions} />
-          <RadarChart />
+          <ChartRadar
+            kind={performance.data.kind}
+            performance={performance.data.data}
+          />
           <PieChart />
         </div>
         <Card

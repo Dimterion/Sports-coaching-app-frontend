@@ -1,4 +1,9 @@
 .areaChart-container {
   background-color: var(--primaryColor);
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-top: 5vh;
+}
+
+.averageSessions-label {
+  color: #ffffff;
 }

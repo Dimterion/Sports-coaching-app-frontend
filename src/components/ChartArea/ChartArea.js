@@ -52,7 +52,16 @@ function ChartArea(props) {
       />
       <YAxis hide />
       <Tooltip content={<AverageSessionsTooltip />} />
-      <Area type="monotone" dataKey="length" stroke="#ffffff" fill="#ff0101" />
+      <Area
+        type="natural"
+        dataKey="length"
+        stroke="#ffffff"
+        strokeWidth={2}
+        fill="#ff0101"
+      />
+      <text x="5%" y="15%">
+        Average speed of your sessions
+      </text>
     </AreaChart>
   );
 }

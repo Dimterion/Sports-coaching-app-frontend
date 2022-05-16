@@ -1,0 +1,9 @@
+.barChart-container {
+  background-color: var(--primaryBackgroundColor);
+  border-radius: 5px;
+}
+
+.dailyActivity-tooltip {
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+}

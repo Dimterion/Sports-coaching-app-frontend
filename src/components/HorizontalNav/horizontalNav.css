@@ -1,6 +1,6 @@
 .horizontalNav-container {
   background-color: var(--navBackgroundColor);
-  color: var(--navTextColor);
+  color: var(--secondaryColor);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 
 .horizontalNav-nav > a {
-  color: var(--navTextColor);
+  color: var(--secondaryColor);
   text-decoration: none;
   margin: 5vw;
 }
