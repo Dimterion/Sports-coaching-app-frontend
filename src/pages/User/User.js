@@ -5,7 +5,7 @@ import ChartBar from "../../components/ChartBar/ChartBar";
 import ChartArea from "../../components/ChartArea/ChartArea";
 import ChartRadar from "../../components/ChartRadar/ChartRadar";
 import Card from "../../components/Card/Card";
-import PieChart from "../../components/PieChart/PieChart";
+import ChartRadialBar from "../../components/ChartRadialBar/ChartRadialBar";
 import Loader from "../../components/Loader/Loader";
 import Error from "../Error/Error";
 import "./user.css";
@@ -51,12 +51,14 @@ function User() {
       <div className="statistics-container">
         <div className="charts-container">
           <ChartBar activities={activities.data.sessions} />
-          <ChartArea sessions={averageSessions.data.sessions} />
-          <ChartRadar
-            kind={performance.data.kind}
-            performance={performance.data.data}
-          />
-          <PieChart />
+          <div className="lowerCharts">
+            <ChartArea sessions={averageSessions.data.sessions} />
+            <ChartRadar
+              indicators={performance.data.kind}
+              performance={performance.data.data}
+            />
+            <ChartRadialBar score={user.data.todayScore || user.data.score} />
+          </div>
         </div>
         <Card
           firstItemQuantity={user.data.keyData.calorieCount}

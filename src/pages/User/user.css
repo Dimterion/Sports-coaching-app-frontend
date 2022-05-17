@@ -1,3 +1,12 @@
+.lowerCharts {
+  display: flex;
+  margin-top: 5vh;
+}
+
+.lowerCharts > div {
+  margin-right: 2vw;
+}
+
 .statistics-container {
   display: flex;
   justify-content: space-between;

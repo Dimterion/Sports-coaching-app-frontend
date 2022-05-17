@@ -1,0 +1,5 @@
+.radarChar-container {
+  background-color: var(--chartsSecondaryColor);
+  border-radius: 5px;
+  font-size: 0.7rem;
+}

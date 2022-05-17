@@ -1,0 +1,4 @@
+.radialBarChart-container {
+  background-color: var(--primaryBackgroundColor);
+  border-radius: 5px;
+}

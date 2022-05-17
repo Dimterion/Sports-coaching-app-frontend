@@ -32,8 +32,8 @@ function ChartArea(props) {
   return (
     <AreaChart
       className="areaChart-container"
-      width={300}
-      height={200}
+      width={250}
+      height={250}
       data={data}
       margin={{
         top: 90,
@@ -59,7 +59,7 @@ function ChartArea(props) {
         strokeWidth={2}
         fill="#ff0101"
       />
-      <text x="5%" y="15%">
+      <text x="5%" y="15%" stroke="white" fontWeight={100}>
         Average speed of your sessions
       </text>
     </AreaChart>
