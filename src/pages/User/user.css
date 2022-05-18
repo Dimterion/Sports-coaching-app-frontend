@@ -1,14 +1,23 @@
+.statistics-container {
+  display: flex;
+  margin: 5vh 5vw 5vh 15vw;
+}
+
+.charts-container {
+  margin-right: 10vw;
+}
+
 .lowerCharts {
   display: flex;
-  margin-top: 5vh;
+  margin-top: 25px;
 }
 
 .lowerCharts > div {
-  margin-right: 2vw;
+  margin-right: 25px;
 }
 
-.statistics-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 5vh 5vw 5vh 15vw;
+@media screen and (max-width: 1400px) {
+  .statistics-container {
+    flex-wrap: wrap;
+  }
 }

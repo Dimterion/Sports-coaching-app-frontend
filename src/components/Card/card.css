@@ -1,14 +1,20 @@
+.card-container {
+  display: flex;
+  flex-flow: column;
+}
+
 .card-container > div {
   display: flex;
   align-items: center;
   background-color: var(--primaryBackgroundColor);
   border-radius: 5px;
-  margin: 2vh;
-  padding: 2vh 2vw;
+  margin: 0 0 25px 0;
+  height: 125px;
+  width: 250px;
 }
 
 .card-container > div > img {
-  margin: 0 2vh 0 0;
+  margin: 0 1vw;
   width: 4rem;
 }
 
@@ -20,4 +26,16 @@
 .card-container > div > div > span {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1400px) {
+  .card-container {
+    flex-direction: row;
+  }
+
+  .card-container > div {
+    margin: 25px 25px 0 0;
+    height: 100px;
+    width: 181px;
+  }
 }

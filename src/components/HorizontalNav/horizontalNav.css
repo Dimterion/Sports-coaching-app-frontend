@@ -13,3 +13,9 @@
   text-decoration: none;
   margin: 5vw;
 }
+
+@media screen and (max-width: 1500px) {
+  .horizontalNav-container {
+    width: 100vw;
+  }
+}

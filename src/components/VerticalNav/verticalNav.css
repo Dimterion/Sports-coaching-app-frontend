@@ -7,7 +7,7 @@
   background-color: var(--navBackgroundColor);
   color: var(--secondaryColor);
   margin: 0;
-  height: 100vh;
+  height: 95vh;
   width: 7vw;
 }
 
@@ -24,4 +24,17 @@
   font-size: 0.8rem;
   transform: rotate(-90deg);
   width: max-content;
+}
+
+@media screen and (max-width: 1500px) {
+  .verticalNav-container {
+    height: 120vh;
+    width: 10vw;
+  }
+}
+
+@media screen and (max-height: 760px) {
+  .verticalNav-container {
+    height: 180vh;
+  }
 }

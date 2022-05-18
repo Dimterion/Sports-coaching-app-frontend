@@ -4,6 +4,17 @@
 }
 
 .dailyActivity-tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   color: var(--secondaryColor);
   background-color: var(--primaryColor);
+  height: 90px;
+  width: 60px;
+}
+
+.dailyActivity-label {
+  font-size: 0.75rem;
+  margin: 10px;
 }
