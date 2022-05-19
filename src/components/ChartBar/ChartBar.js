@@ -8,6 +8,7 @@ import {
   YAxis,
 } from "recharts";
 import "./chartBar.css";
+import PropTypes from "prop-types";
 
 function ChartBar(props) {
   const numbers = [1, 2, 3, 4, 5, 6, 7];
@@ -101,5 +102,13 @@ function ChartBar(props) {
     </BarChart>
   );
 }
+
+ChartBar.propTypes = {
+  activities: PropTypes.array.isRequired,
+};
+
+ChartBar.defaultProps = {
+  activities: [],
+};
 
 export default ChartBar;

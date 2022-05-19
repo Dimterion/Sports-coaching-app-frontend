@@ -1,4 +1,5 @@
 import "./header.css";
+import PropTypes from "prop-types";
 
 function Header(props) {
   return (
@@ -13,5 +14,13 @@ function Header(props) {
     </div>
   );
 }
+
+Header.propTypes = {
+  firstName: PropTypes.string.isRequired,
+};
+
+Header.defaultProps = {
+  firstName: "User",
+};
 
 export default Header;

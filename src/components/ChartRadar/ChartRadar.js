@@ -5,8 +5,8 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
 } from "recharts";
-
 import "./chartRadar.css";
+import PropTypes from "prop-types";
 
 function ChartRadar(props) {
   const indicators = props.indicators;
@@ -40,5 +40,15 @@ function ChartRadar(props) {
     </RadarChart>
   );
 }
+
+ChartRadar.propTypes = {
+  indicators: PropTypes.object.isRequired,
+  performance: PropTypes.array.isRequired,
+};
+
+ChartRadar.defaultProps = {
+  indicators: {},
+  performance: [],
+};
 
 export default ChartRadar;

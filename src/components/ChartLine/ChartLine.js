@@ -1,6 +1,6 @@
 import { LineChart, Line, XAxis, Tooltip } from "recharts";
-
 import "./chartLine.css";
+import PropTypes from "prop-types";
 
 function ChartLine(props) {
   const days = ["M", "T", "W", "T", "F", "S", "S"];
@@ -60,14 +60,22 @@ function ChartLine(props) {
           stroke: "rgba(255, 255, 255, 0.25)",
         }}
       />
-      <text x="10%" y="15%" fontWeight={100} stroke="rgba(255, 255, 255, 0.75)" >
+      <text x="10%" y="15%" fontWeight={100} stroke="rgba(255, 255, 255, 0.75)">
         Average speed of
       </text>
-      <text x="10%" y="25%" fontWeight={100} stroke="rgba(255, 255, 255, 0.75)" >
+      <text x="10%" y="25%" fontWeight={100} stroke="rgba(255, 255, 255, 0.75)">
         your sessions
       </text>
     </LineChart>
   );
 }
+
+ChartLine.propTypes = {
+  sessions: PropTypes.array.isRequired,
+};
+
+ChartLine.defaultProps = {
+  sessions: [],
+};
 
 export default ChartLine;

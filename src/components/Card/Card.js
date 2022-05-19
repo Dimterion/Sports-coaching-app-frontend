@@ -3,6 +3,7 @@ import proteinsIcon from "../../assets/proteins-icon.png";
 import carbsIcon from "../../assets/carbs-icon.png";
 import lipidsIcon from "../../assets/lipids-icon.png";
 import "./card.css";
+import PropTypes from "prop-types";
 
 function Card(props) {
   return (
@@ -38,5 +39,19 @@ function Card(props) {
     </div>
   );
 }
+
+Card.propTypes = {
+  firstItemQuantity: PropTypes.number.isRequired,
+  secondItemQuantity: PropTypes.number.isRequired,
+  thirdItemQuantity: PropTypes.number.isRequired,
+  fourthItemQuantity: PropTypes.number.isRequired,
+};
+
+Card.defaultProps = {
+  firstItemQuantity: 0,
+  secondItemQuantity: 0,
+  thirdItemQuantity: 0,
+  fourthItemQuantity: 0,
+};
 
 export default Card;
