@@ -31,12 +31,12 @@ function ChartRadar(props) {
       <PolarGrid radialLines={false} />
       <PolarAngleAxis
         dataKey="kind"
-        stroke="white"
+        stroke="var(--secondaryColor)"
         axisLine={false}
         tickLine={false}
       />
       <PolarRadiusAxis axisLine={false} stroke="none" />
-      <Radar dataKey="value" fill="#ff0101" fillOpacity={0.6} />
+      <Radar dataKey="value" fill="var(--primaryColor)" fillOpacity={0.6} />
     </RadarChart>
   );
 }

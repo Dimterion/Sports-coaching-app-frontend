@@ -1,0 +1,7 @@
+.averageSessions-tooltip {
+  background-color: var(--secondaryColor);
+  border-radius: 1px;
+  padding: 5px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

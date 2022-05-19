@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../utils/fetch";
 import Header from "../../components/Header/Header";
 import ChartBar from "../../components/ChartBar/ChartBar";
-import ChartArea from "../../components/ChartArea/ChartArea";
+import ChartLine from "../../components/ChartLine/ChartLine";
 import ChartRadar from "../../components/ChartRadar/ChartRadar";
 import Card from "../../components/Card/Card";
 import ChartRadialBar from "../../components/ChartRadialBar/ChartRadialBar";
@@ -52,7 +52,7 @@ function User() {
         <div className="charts-container">
           <ChartBar activities={activities.data.sessions} />
           <div className="lowerCharts">
-            <ChartArea sessions={averageSessions.data.sessions} />
+            <ChartLine sessions={averageSessions.data.sessions} />
             <ChartRadar
               indicators={performance.data.kind}
               performance={performance.data.data}

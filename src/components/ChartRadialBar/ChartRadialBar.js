@@ -4,7 +4,7 @@ import "./chartRadialBar.css";
 function ChartRadialBar(props) {
   const data = [
     {
-      name: "score",
+      name: "Score",
       score: props.score * 100,
     },
   ];
@@ -16,24 +16,30 @@ function ChartRadialBar(props) {
       height={250}
       cx="50%"
       cy="50%"
-      innerRadius="100%"
-      outerRadius="100%"
+      innerRadius="80%"
+      outerRadius="90%"
       barSize={10}
       data={data}
       startAngle={90}
       endAngle={450}
     >
-      <RadialBar background dataKey="score" cornerRadius="50%" fill="#ff0101" />
+      <RadialBar background dataKey="score" cornerRadius="50%" fill="var(--primaryColor)" />
       <PolarAngleAxis
         type="number"
         domain={[0, 100]}
         dataKey={"name"}
         tick={false}
       />
-      <text fontSize="1rem" x="50%" y="55%" textAnchor="middle">
-        {props.score * 100}% of your goal
+      <text fontSize="1.5rem" fontWeight={700} x="50%" y="45%" textAnchor="middle">
+        {props.score * 100}%
       </text>
-      <Legend align="left" verticalAlign="top" />
+      <text fontSize="1rem" x="50%" y="55%" textAnchor="middle">
+        of your
+      </text>
+      <text fontSize="1rem" x="50%" y="65%" textAnchor="middle">
+        goal
+      </text>
+      <Legend align="left" verticalAlign="top" iconSize="0" />
     </RadialBarChart>
   );
 }
