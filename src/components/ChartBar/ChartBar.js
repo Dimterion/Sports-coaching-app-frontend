@@ -10,6 +10,17 @@ import {
 import "./chartBar.css";
 import PropTypes from "prop-types";
 
+/**
+ * Component for the bar chart.
+ * @param {array} activities // Using an array of activities indicators to display on the chart through props.
+ * @param {array} numbers // An array of the numbers to display on the chart.
+ * @example
+ * const activities = [{"day":"2020-07-01","kilogram":80,"calories":240}, {"day":"2020-07-02","kilogram":80,"calories":220}];
+ * returns (
+ *  <ChartBar activities={activities} />
+ * )
+ */
+
 function ChartBar(props) {
   const numbers = [1, 2, 3, 4, 5, 6, 7];
 

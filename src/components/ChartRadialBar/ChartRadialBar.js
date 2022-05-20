@@ -2,6 +2,16 @@ import { RadialBarChart, RadialBar, PolarAngleAxis, Legend } from "recharts";
 import "./chartRadialBar.css";
 import PropTypes from "prop-types";
 
+/**
+ * Component for the radial bar chart.
+ * @param {number} score // Using user's score to display the percentage of the completion through props.
+ * @example
+ * const score = 100;
+ * returns (
+ *  <ChartRadialBar score={score} />
+ * )
+ */
+
 function ChartRadialBar(props) {
   const data = [
     {

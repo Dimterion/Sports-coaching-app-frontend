@@ -10,6 +10,14 @@ import Loader from "../../components/Loader/Loader";
 import Error from "../Error/Error";
 import "./user.css";
 
+/**
+ * Component for the user page.
+ * @example
+ * returns (
+ *  <User />
+ * )
+ */
+
 function User() {
   const { id } = useParams();
   const {

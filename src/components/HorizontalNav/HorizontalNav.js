@@ -2,6 +2,14 @@ import logo from "../../assets/sportSee-logo.svg";
 import { Link } from "react-router-dom";
 import "./horizontalNav.css";
 
+/**
+ * Component for the horizontal navigation bar.
+ * @example
+ * returns (
+ *  <HorizontalNav />
+ * )
+ */
+
 function HorizontalNav() {
   return (
     <nav className="horizontalNav-container">

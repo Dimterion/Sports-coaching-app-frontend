@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import "./home.css";
 
+/**
+ * Component for the home page.
+ * @example
+ * returns (
+ *  <Home />
+ * )
+ */
+
 function Home() {
   return (
     <div className="home-container">

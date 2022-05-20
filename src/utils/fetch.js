@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
 
+/**
+ * Function to fetch data from the API.
+ * @param {string} URL // Using URL of the API to get the data.
+ */
+
 function useFetch(url) {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);

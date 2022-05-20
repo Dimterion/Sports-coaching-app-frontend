@@ -5,6 +5,16 @@ import lipidsIcon from "../../assets/lipids-icon.png";
 import "./card.css";
 import PropTypes from "prop-types";
 
+/**
+ * Component for the cards.
+ * @param {number} ItemQuantity // Using cards items quantities to display on the cards through props.
+ * @example
+ * const ItemQuantity = 1930;
+ * returns (
+ *  <Card ItemQuantity={ItemQuantity} />
+ * )
+ */
+
 function Card(props) {
   return (
     <div className="card-container">

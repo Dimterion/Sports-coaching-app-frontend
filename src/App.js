@@ -6,6 +6,14 @@ import User from "./pages/User/User";
 import Error from "./pages/Error/Error";
 import "./App.css";
 
+/**
+ * Component for the routing of the application.
+ * @example
+ * returns (
+ *  <App />
+ * )
+ */
+
 function App() {
   return (
     <BrowserRouter>

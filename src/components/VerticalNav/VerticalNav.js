@@ -5,6 +5,14 @@ import dumbbellIcon from "../../assets/dumbbell-icon.png";
 import { Link } from "react-router-dom";
 import "./verticalNav.css";
 
+/**
+ * Component for the vertical navigation bar.
+ * @example
+ * returns (
+ *  <VerticalNav />
+ * )
+ */
+
 function VerticalNav() {
   return (
     <div className="verticalNav-container">

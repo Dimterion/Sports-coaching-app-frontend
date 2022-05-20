@@ -2,6 +2,17 @@ import { LineChart, Line, XAxis, Tooltip } from "recharts";
 import "./chartLine.css";
 import PropTypes from "prop-types";
 
+/**
+ * Component for the line chart.
+ * @param {array} sessions // Using array with sessions duration to display on the chart through props.
+ * @param {array} days // An array of the days to display on the chart.
+ * @example
+ * const sessions = [{day: 1, sessionLength: 30}, {day: 2, sessionLength: 23} ];
+ * returns (
+ *  <ChartLine sessions={sessions} />
+ * )
+ */
+
 function ChartLine(props) {
   const days = ["M", "T", "W", "T", "F", "S", "S"];
 
