@@ -11,3 +11,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Minor adjustments to small screens (which is not part of the project's tasks) */
+
+@media screen and (max-width: 990px) {
+  .horizontalNav-container {
+    width: 140vh;
+  }
+
+  .verticalNav-container {
+    height: 245vh;
+    width: 20vw;
+  }
+
+  .header-container {
+    margin: 10vh 25vw 15vh;
+  }
+
+  .header-text {
+    width: 100vh;
+  }
+
+  .charts-container {
+    margin: 15vh 0;
+  }
+
+  .statistics-container {
+    margin-left: 25vw;
+  }
+
+}
+

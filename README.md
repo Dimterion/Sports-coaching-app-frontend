@@ -14,6 +14,7 @@ HTML, CSS, JavaScript, React, React Router, Recharts
 - Complete the provided [User Stories](https://even-moonflower-317.notion.site/Dashboard-SportSee-app-625f4c4604324b889e7d39fe08748aef)
 - Use JSDoc to document project's functions and methods
 - Use PropTypes for the React components
+- Focus on the desktop version of the app with minimal resolution 1024x780px
 
 ## Project goals
 
